@@ -1,5 +1,7 @@
 # Auth0 - Vue.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/vue-auth0-example.svg)](https://greenkeeper.io/)
+
 This repo shows how to implement Auth0 in a single page Vue.js application. It relies on [Vue components](http://vuejs.org/guide/components.html) so that **vue-router** can be used. The [Auth0 NodeJS API seed](https://github.com/auth0/node-auth0/tree/master/examples/nodejs-api) is used as a simple backend.
 
 For an example of authentication in a modularized build system for Vue.js apps, which includes ES2015, Webpack, and vue-loader, see the [Vue JWT Authentication sample](https://github.com/auth0/vue-jwt-authentication).
