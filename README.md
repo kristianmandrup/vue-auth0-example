@@ -4,6 +4,8 @@ This repo shows how to implement Auth0 in a single page Vue.js application. It r
 
 For an example of authentication in a modularized build system for Vue.js apps, which includes ES2015, Webpack, and vue-loader, see the [Vue JWT Authentication sample](https://github.com/auth0/vue-jwt-authentication).
 
+Based on [Auth0 quickstart](https://manage.auth0.com/#/clients/VG-HOgBHOnmXnkcXzgW0K3axOqGY5R4b/quickstart)
+
 ## Resources
 
 Also see:

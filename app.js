@@ -1,7 +1,10 @@
+var AUTH0_CLIENT_ID = 'VG-HOgBHOnmXnkcXzgW0K3axOqGY5R4b';
+var AUTH0_DOMAIN = 'tecla5.eu.auth0.com'
+
 // Intercept responses and check for anything
 // unauthorized. If there is an unauthorized response,
 // dispatch an event to let the app handle it
-Vue.http.interceptors.push(function(request, next) {
+Vue.http.interceptors.push(function (request, next) {
   let self = this;
   next((response) => {
     if (response.status === 401) {
@@ -48,7 +51,7 @@ var App = {
     }
   },
   events: {
-    'logout': function() {
+    'logout': function () {
       this.logout();
     }
   },
@@ -56,7 +59,7 @@ var App = {
   // loads to account for page refreshing
   mounted() {
     var self = this;
-    Vue.nextTick(function() {
+    Vue.nextTick(function () {
       self.authenticated = checkAuth();
       self.lock.on('authenticated', (authResult) => {
         console.log('authenticated');
@@ -75,7 +78,7 @@ var App = {
       self.lock.on('authorization_error', (error) => {
         // handle error when authorizaton fails
       });
-  });
+    });
   },
   methods: {
     login() {
